@@ -1,18 +1,19 @@
 import { Component } from '@angular/core';
-
+import {MatDialog} from '@angular/material/dialog';
+import {OpendilogComponent} from '..//app/opendilog/opendilog.component'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'demotuesday';
-  result
-  clickMe(){
-    alert("hello")
-  }
-  submitData(num1,num2){
-    this.result=num1+num2
-    console.log("result",this.result)
+  constructor(public dialog: MatDialog) {}
+
+  openDialog() {
+    const dialogRef = this.dialog.open(OpendilogComponent);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 }
