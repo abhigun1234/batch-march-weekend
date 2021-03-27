@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'demotuesday';
+  result
+  clickMe(){
+    alert("hello")
+  }
+  submitData(num1,num2){
+    this.result=num1+num2
+    console.log("result",this.result)
+  }
 }
