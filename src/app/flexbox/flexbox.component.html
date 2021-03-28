@@ -1,7 +1,3 @@
-
-<div class="container">
-<button>One</button>
-<button>Two</button>
-<button>Three</button>
-</div>
-
+{{mydata}}
+<input #data type="text" placeholder="Enter data">
+<button (click)="setData(data.value)">Click</button>

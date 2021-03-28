@@ -11,6 +11,9 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { MydailogComponent } from './mydailog/mydailog.component';
 import { FlexboxComponent } from './flexbox/flexbox.component';
+import { LoginComponent } from './login/login.component';
+import {FormsModule} from '@angular/forms';
+import { TeamComponent } from './team/team.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +21,9 @@ import { FlexboxComponent } from './flexbox/flexbox.component';
     RegisterComponent,
     HeaderComponent,
     MydailogComponent,
-    FlexboxComponent
+    FlexboxComponent,
+    LoginComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +31,8 @@ import { FlexboxComponent } from './flexbox/flexbox.component';
     BrowserAnimationsModule,
     MatDialogModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

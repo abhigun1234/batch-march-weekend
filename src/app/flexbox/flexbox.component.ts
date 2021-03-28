@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./flexbox.component.css']
 })
 export class FlexboxComponent implements OnInit {
-
+   mydata:string="hello"
   constructor() { }
 
   ngOnInit(): void {
+  }
+  setData(_data:string){
+   this.mydata=_data
   }
 
 }
