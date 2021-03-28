@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog';
 import {OpendilogComponent} from '..//app/opendilog/opendilog.component'
+import {MydailogComponent} from '..//app/mydailog/mydailog.component'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,13 +11,14 @@ export class AppComponent {
   result
   constructor(public dialog: MatDialog) {}
 
-  // openDialog() {
-  //   const dialogRef = this.dialog.open(OpendilogComponent);
+  openDialog() {
+    const dialogRef = this.dialog.open(MydailogComponent);
 
-  //   dialogRef.afterClosed().subscribe(result => {
-  //     console.log(`Dialog result: ${result}`);
-  //   });
-  // }
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+      alert("hello")
+    });
+  }
   sendData(data){
     alert(data)
 

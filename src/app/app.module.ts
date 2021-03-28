@@ -9,12 +9,14 @@ import { RegisterComponent } from './register/register.component';
 import { HeaderComponent } from './header/header.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import { MydailogComponent } from './mydailog/mydailog.component';
 @NgModule({
   declarations: [
     AppComponent,
     OpendilogComponent,
     RegisterComponent,
-    HeaderComponent
+    HeaderComponent,
+    MydailogComponent
   ],
   imports: [
     BrowserModule,
