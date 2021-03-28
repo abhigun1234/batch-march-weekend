@@ -10,13 +10,15 @@ import { HeaderComponent } from './header/header.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { MydailogComponent } from './mydailog/mydailog.component';
+import { FlexboxComponent } from './flexbox/flexbox.component';
 @NgModule({
   declarations: [
     AppComponent,
     OpendilogComponent,
     RegisterComponent,
     HeaderComponent,
-    MydailogComponent
+    MydailogComponent,
+    FlexboxComponent
   ],
   imports: [
     BrowserModule,
